@@ -56,9 +56,7 @@
                         const stockElement = document.getElementById("stock" + this.id);
                     if (stockElement) {
                         stockElement.textContent = this.stock;
-                    }
-                } else {
-                    console.log(this.name + "は商品の在庫がないため購入できません。");// 課題4-3. ここにコードを書く
+                    }// 課題4-3. ここにコードを書く
                         // 在庫用のエレメントを抽出し、HTML内の個数を更新
                     } else console.log(this.name+"は商品の在庫がないため購入できません。");
                 }
@@ -78,6 +76,7 @@
             // 商品オブジェクトの生成
 
             for (let i = 0; i < items.length; i++){
+　　　　　　　　　itemArea.innerHTML +=
                 "<tr>" +
                 "<td>" + item_list[i].name + "</td>" +
                 "<td>" + item_list[i].price + "</td>" +
